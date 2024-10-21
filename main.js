@@ -1,7 +1,11 @@
 import express from 'express';
 import router from "./routes/app.route.js";
+import mongoDBConnection from './lib/db.js';
 
 const app = express();
+
+// DB Connection
+mongoDBConnection();
 
 const PORT = 6969;
 
